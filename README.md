@@ -21,7 +21,8 @@ Application designed to calculate the nominal power for a potential solar power 
 ## Run the App
 
 1. Install dependencies: `npm install`
-2. Run `npm start`
+2. Run `npm start`. This will start a web server on localhost:4200
+3. Open a browser to `http://localhost:4200` to use the app.
 
 ## Test the App
 
