@@ -6,7 +6,13 @@ Application designed to calculate the nominal power for a potential solar power 
 
 1. Allow user to search by address to locate a place on a map.
 2. Allow user to draw one or more polygons on the map and calculate the nominal power for the combined area.
-   1. To calculate we'll assume standard testing conditions: area(m^2) * 
+   1. To calculate we'll assume standard testing conditions: Am^2 * 1000W/m^2
+   2. To account for tilt we adjust that formula like so: `Am^2 * 1000W/m^2 * ((1 + cos(2 * tilt))/2)`. This assumes that the solar tiles would always be facing upward, regardless of the angle.
+
+## Technology
+
+* Angular as the front-end framework. 
+* Google Maps as the Map SDK/API provider 
 
 ## Prerequisites
 
