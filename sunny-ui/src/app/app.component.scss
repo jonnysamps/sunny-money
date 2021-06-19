@@ -1,0 +1,41 @@
+:host, .container {
+  height: 100%;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+
+  &.row {
+    flex-direction: row;
+  }
+}
+
+.map {
+  background-color: green;
+  flex: 1 1 auto;
+}
+
+#search {
+  flex: 1 1 auto;
+  font-size: 20px;
+  text-align: right;
+  padding: 20px;
+  min-width: 0;
+  // background-color: pink;
+  border: 0;
+  border-bottom: 5px solid #ccc;
+  &:focus {
+    outline: none;
+  }
+}
+
+h4 {
+  margin: 20px 20px;
+}
+
+#power_calc {
+  padding: 40px;
+  font-size: 20px
+}

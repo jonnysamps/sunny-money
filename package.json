@@ -1,0 +1,12 @@
+{
+  "name": "sunny-money",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd sunny-ui && npm test",
+    "start": "cd sunny-ui && npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
