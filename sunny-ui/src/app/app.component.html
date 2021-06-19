@@ -1,9 +1,18 @@
 <div class="container flex">
   <div class="flex row">
-    <h4>Sunny Money</h4>
+    <h4>Sunny <br/>Money</h4>
     <!-- <div id="search"></div> -->
-    <input id="search" placeholder="Search">
+    <input id="search" placeholder="Location Search">
   </div>
   <div id="map" class="map"></div>
-  <div id="power_calc">Nominal Power: <code>AREA m^2 * 1000W/m^2 = {{ getArea() }} * 1000W = <strong>{{ getArea() * 1000 | number}}W</strong></code> </div>
+  <div class="flex row" id="power_calc">
+    <div class="flex">
+      <span>Nominal Power:</span>
+      <div class="ft-sm">Tilt<sup>o</sup>: <input [(ngModel)]="tilt" /></div>
+    </div>
+    <div class="flex">
+      <code>{{ getArea() | number }}m<sup>2</sup> * 1000W/m<sup>2</sup> * cos(tilt)</code>
+      <code><strong> = {{ getArea() * 1000 * ((1 + cos(2 * tilt))/2) | number}}W</strong></code>
+    </div>
+  </div>
 </div>
